@@ -48,3 +48,12 @@ module.exports = {
   ],
 };
 ```
+
+### Usage
+
+```html
+<div>
+  <button hx-post="/example">Post It!</button>
+  <img id="spinner" class="invisible htmx-request:visible" src="/img/bars.svg" />
+</div>
+```
