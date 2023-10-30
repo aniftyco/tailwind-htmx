@@ -9,7 +9,7 @@ export type Options = {
   };
 };
 
-export default plugin.withOptions<Options>(({ classNames }) => ({ addVariant }) => {
+export default plugin.withOptions<Options>(({ classNames } = {}) => ({ addVariant }) => {
   addVariant(classNames?.settling ?? 'htmx-settling', ['&.htmx-settling', '.htmx-settling &']);
   addVariant(classNames?.request ?? 'htmx-request', ['&.htmx-request', '.htmx-request &']);
   addVariant(classNames?.swapping ?? 'htmx-swapping', ['&.htmx-swapping', '.htmx-swapping &']);
