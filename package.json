@@ -1,0 +1,36 @@
+{
+  "name": "tailwind-htmx",
+  "description": "Variants for styling htmx classes with Tailwind CSS",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "NiftyCo, LLC",
+    "email": "support@aniftyco.com",
+    "url": "https://aniftyco.com"
+  },
+  "contributors": [
+    {
+      "name": "Josh Manders",
+      "url": "https://twitter.com/joshmanders"
+    }
+  ],
+  "scripts": {
+    "start": "tsc -p tsconfig.json --watch --preserveWatchOutput",
+    "build": "rimraf dist && tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist/"
+  ],
+  "prettier": "@aniftyco/prettier",
+  "devDependencies": {
+    "@aniftyco/prettier": "^0.1.0",
+    "@aniftyco/tsconfig": "^1.0.1",
+    "@types/node": "^20.8.2",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
+  }
+}
